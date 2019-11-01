@@ -3439,7 +3439,7 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 740441930, guid: 3b6467845b22da744beea9973d33de13, type: 3}
       propertyPath: isUpgraded
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 740441930, guid: 3b6467845b22da744beea9973d33de13, type: 3}
       propertyPath: missilePoolSize
