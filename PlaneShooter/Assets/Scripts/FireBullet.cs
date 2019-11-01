@@ -132,8 +132,19 @@ public class FireBullet : MonoBehaviour
         }
         return null;
     }
-    void Upgrade()
+    [HideInInspector]
+    public void ReloadUpgraded()
     {
-        
+        for(int i = 0; i < upgradedPoolSize; i++)
+        {
+            if (upgradedPool[i].activeSelf)
+            {
+                if (!upgradedPool[i].GetComponent<Renderer>().enabled)
+                {
+                    upgradedPool[i].GetComponent<Renderer>().enabled = true;
+                }
+                upgradedPool[i].SetActive(false);
+            }
+        }
     }
 }

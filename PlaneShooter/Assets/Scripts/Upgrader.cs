@@ -5,10 +5,12 @@ using UnityEngine;
 public class Upgrader : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private FireBullet missile;
     public float horizontalSpeed, verticalSpeed;
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        missile = GameObject.FindGameObjectWithTag("Player").GetComponent<FireBullet>();
     }
 
     // Update is called once per frame
@@ -20,8 +22,17 @@ public class Upgrader : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<FireBullet>().isUpgraded = true;
-            this.gameObject.SetActive(false);
+            if (!missile.isUpgraded)
+            {
+                GameObject.FindGameObjectWithTag("Player").GetComponent<FireBullet>().isUpgraded = true;
+                this.gameObject.SetActive(false);
+            } else
+            {
+                GameObject.FindGameObjectWithTag("Player").GetComponent<FireBullet>().ReloadUpgraded();
+                this.gameObject.SetActive(false);
+                   
+            }
+            
         }
     }
 }
