@@ -44,9 +44,12 @@ GameObject:
   - component: {fileID: 1728076726}
   - component: {fileID: 1008442498135803429}
   - component: {fileID: 1873105323}
+  - component: {fileID: 511512338}
+  - component: {fileID: 511512339}
+  - component: {fileID: 511512340}
   m_Layer: 9
   m_Name: enemyShip2
-  m_TagString: Enemy
+  m_TagString: sarga
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,3 +182,75 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 4
+--- !u!114 &511512338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2792215518669650052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33309a817b51b7c46a8ef64696039ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missileProto: {fileID: 7148397308274167830, guid: bca2c9cf5fc0db844a67188488415ffa,
+    type: 3}
+  firePoint: {fileID: 2792215518084025450}
+  missilePool:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  missilePoolSize: 10
+  speed: 10
+  coolDownTime: 1
+  coolDown: 0
+  once: 1
+  player: {x: 0, y: 0, z: 0}
+  enemy: {x: 0, y: 0, z: 0}
+  rb: {fileID: 0}
+  eSpeed: 2
+  start: {fileID: 0}
+  fel: 1
+--- !u!50 &511512339
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2792215518669650052}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 100
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &511512340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2792215518669650052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79f3f6fe2ecaf754c8f75681fa792798, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  startY: 0

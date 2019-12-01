@@ -5,7 +5,7 @@ using UnityEngine;
 public class DistanceDeactivator : MonoBehaviour
 {
     private Vector3 startPosition;
-    public float MaxDistance = 10;
+    public float MaxDistance = 3.5f;
 
     void OnEnable()
     {

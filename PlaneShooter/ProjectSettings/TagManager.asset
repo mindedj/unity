@@ -8,6 +8,11 @@ TagManager:
   - spikyObj
   - Enemy
   - Missile2
+  - EnemyMissile
+  - Boss
+  - sarga
+  - piros
+  - repuloCucc
   layers:
   - Default
   - TransparentFX
@@ -24,7 +29,7 @@ TagManager:
   - Missile
   - UpgradeBox
   - Missile2
-  - 
+  - EnemyMissile
   - 
   - 
   - 

@@ -83,7 +83,7 @@ public class FireBullet : MonoBehaviour
             return;
         }
         newMissile.GetComponent<Transform>().position = firePoint.position;
-
+        this.gameObject.GetComponent<AudioSource>().Play();
         newMissile.SetActive(true);       
 
         newMissile.GetComponent<Rigidbody2D>().velocity = new Vector3(speed, 0, 0);
@@ -102,7 +102,7 @@ public class FireBullet : MonoBehaviour
             }
             return;
         }
-
+        this.gameObject.GetComponent<AudioSource>().Play();
         newMissile.GetComponent<Transform>().position = firePoint.position;
         newMissile.SetActive(true);
         newMissile.GetComponent<Rigidbody2D>().velocity = new Vector3(speed, 0, 0);

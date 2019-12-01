@@ -62,16 +62,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Achies.cs" />
     <Compile Include="Assets\Scripts\CharacterMovemenetController.cs" />
     <Compile Include="Assets\Scripts\DistanceDeactivator.cs" />
     <Compile Include="Assets\Scripts\EnemyDeath.cs" />
+    <Compile Include="Assets\Scripts\enemyShipAI.cs" />
     <Compile Include="Assets\Scripts\FireBullet.cs" />
     <Compile Include="Assets\Scripts\HealthSystem.cs" />
+    <Compile Include="Assets\Scripts\Heart.cs" />
+    <Compile Include="Assets\Scripts\Manager.cs" />
+    <Compile Include="Assets\Scripts\moveAI.cs" />
+    <Compile Include="Assets\Scripts\movingAI.cs" />
     <Compile Include="Assets\Scripts\Parallaxing.cs" />
     <Compile Include="Assets\Scripts\PlayerDeath.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\PointManager.cs" />
+    <Compile Include="Assets\Scripts\PointSystem.cs" />
     <Compile Include="Assets\Scripts\RespawnController.cs" />
     <Compile Include="Assets\Scripts\Respawner.cs" />
+    <Compile Include="Assets\Scripts\ShootingAI.cs" />
     <Compile Include="Assets\Scripts\SmoothCamera.cs" />
     <Compile Include="Assets\Scripts\Tiling.cs" />
     <Compile Include="Assets\Scripts\Upgrader.cs" />
